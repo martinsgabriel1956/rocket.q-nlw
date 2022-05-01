@@ -1,0 +1,101 @@
+:root {
+  --black: #0D114F;
+  --white: #FAFAFA;
+  --red: #E83F5B;
+  --light-blue: #E0ECFF;
+  --blue: #3485FF;
+  --bg: #FBFCFF;
+  --overlay: #040911;
+  --icons-details: #A5B0C1;
+  --grey-dark: #4D5E77;
+  --grey-blue: #A1B2CD;
+  --grey-medium: #D3D9E2;
+  --grey-light: #E5EAF1;
+  --button-blue: #5699FF;
+  --button-red: #EA4B65;
+  --button-grey: #8794A7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--bg);
+}
+
+body, button, input, textarea {
+  font-size: clamp(14px, 1.6rem, 2vw);
+
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.content {
+ width: 100%;
+ margin: 0 auto; 
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+button, input, .btn {
+  border-radius: .8rem;
+  height: 5rem;
+}
+
+button, .btn {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--blue);
+  color: var(--white);
+  transition:  filter .2s;
+}
+
+.btn.outlined {
+  background: var(--white);
+  color: var(--blue);
+  border: .2rem solid var(--blue);
+}
+
+button:hover, .btn:hover {
+  filter: brightness(1.2);
+}
+
+button > img, .btn > img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+.content header {
+  width: 80%;
+  margin: 3.5rem auto;
+}
+
+.content header img {
+  width: 16.7rem;
+}
