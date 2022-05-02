@@ -14,6 +14,35 @@ header {
 #bg {
   grid-area: left;
   background: url('../assets/home-bg.svg') no-repeat top/contain;
+  background-position: -15rem;
+}
+
+.separator {
+  text-align: center;
+  position: relative;
+  color: var(--grey-blue);
+  line-height: 0;
+  margin: 4rem 0;
+}
+
+.separator::before {
+  content: '';
+  position: absolute;
+  width: 44%;
+  height: 1px;
+  background: var(--grey-blue);
+  left: 0;
+  top: 50%;
+}
+
+.separator::after {
+  content: '';
+  position: absolute;
+  width: 44%;
+  height: 1px;
+  background: var(--grey-blue);
+  right: 0;
+  top: 50%;
 }
 
 main {
@@ -21,10 +50,12 @@ main {
 
   display: flex;
   align-items: center;
+
+  margin-top: -12rem;
 }
 
-main.container {
-  width: min(36.3rem 100%);
+main .container {
+  width: min(36.3rem, 100%);
 }
 
 main h2 {
@@ -42,4 +73,28 @@ input {
 input, button, .btn {
   width: 100%;
   margin-bottom: 1.8rem;
+}
+
+.ball {
+  background: var(--blue);
+  position: fixed;
+
+  width: 21.2rem;
+  height: 21.2rem;
+
+  clip-path: circle(50% at 50% 50%);
+  opacity: .1;
+}
+
+.ball.top {
+  top: -42rem;
+  right: -35rem;
+
+  width: 63.3rem;
+  height: 63.3rem;
+}
+
+.ball.bottom {
+  right: 5.6rem;
+  bottom: -15rem;
 }

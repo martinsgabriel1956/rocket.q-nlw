@@ -1,0 +1,90 @@
+.content {
+  max-width: min(112rem, 80%);
+}
+
+#room header {
+ width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
+  display: flex; 
+}
+
+#room header .buttons-container {
+  display: flex;
+}
+
+#room header .buttons-container .btn:nth-child(1) {
+  margin-right: 0.8rem;
+
+  padding: 1.3rem 1.6rem;
+}
+
+#room header .buttons-container .btn:nth-child(1) img {
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+#room header .buttons-container .btn:nth-child(2) {
+  padding: 1.3rem 3.2rem;
+}
+
+#room header .buttons-container .btn:nth-child(2) img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#question-form h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--black);
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 4.2rem;
+  margin-bottom: 2.4rem;
+}
+
+#question-form form {
+  border: .2rem solid var(--grey-blue);
+  padding: 1.6rem;
+  border-radius: 0 .8rem .8rem;
+
+  margin-bottom: 1.6rem;
+}
+
+#question-form form textarea {
+  resize: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+#question-form form textarea::placeholder {
+  color: var(--grey-blue);
+}
+
+#question-form form footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#question-form form footer > span {
+  color: var(--icons-details);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+
+  display: flex;
+  align-items: center;
+}
+
+#question-form form footer > span img {
+  margin-right: .9rem;
+}
+
+#question-form form footer button {
+  height: auto;
+  padding: 0.8rem 2.4rem;
+  line-height: 2.4rem;
+}
