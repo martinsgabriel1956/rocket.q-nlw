@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/styles/global.css" />
     <link rel="stylesheet" href="./public/styles/room.css" />
+    <link rel="stylesheet" href="./public/styles/modal.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
@@ -23,10 +24,13 @@
         <div class="buttons-container">
           <button class="btn outlined">
             #323243
-            <img src="./public/assets/copy.svg" alt="Copiar código da sala">
+            <img src="./public/assets/copy.svg" alt="Copiar código da sala" />
           </button>
           <a href="" class="btn">
-            <img src="./public/assets/users-icon-white.svg" alt="Criar uma sala" />
+            <img
+              src="./public/assets/users-icon-white.svg"
+              alt="Criar uma sala"
+            />
             Criar sala
           </a>
         </div>
@@ -36,11 +40,20 @@
         <section id="question-form">
           <h2>Faça sua pergunta</h2>
           <form action="">
-            <label class="sr-only" for="question" >O que você quer perguntar?</label>
-            <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+            <label class="sr-only" for="question"
+              >O que você quer perguntar?</label
+            >
+            <textarea
+              name="question"
+              id="question"
+              placeholder="O que você quer perguntar?"
+            ></textarea>
             <footer>
               <span>
-                <img src="./public/assets/lock-icon.svg" alt="Essa pergunta é anônima">
+                <img
+                  src="./public/assets/lock-icon.svg"
+                  alt="Essa pergunta é anônima"
+                />
                 Essa pergunta é anônima
               </span>
               <button class="btn">Enviar</button>
@@ -54,7 +67,7 @@
             <div class="question-wrapper">
               <div class="question-content">
                 <span class="user">
-                  <img src="./public/assets/avatar-icon.svg" alt="Avatar">
+                  <img src="./public/assets/user.svg" alt="Avatar" />
                 </span>
                 <span class="question">
                   Qual a diferença entre o const, var e let no javascript?
@@ -62,11 +75,76 @@
               </div>
               <div class="actions">
                 <a href="#" class="check">
-                  <img src="./public/assets/check-icon.svg" alt="Marcar como lida">
+                  <img
+                    src="./public/assets/check-icon.svg"
+                    alt="Marcar como lida"
+                  />
                   Marcar como lida
                 </a>
                 <a href="#" class="delete">
-                  <img src="./public/assets/trash-icon.svg" alt="Excluir">
+                  <img src="./public/assets/trash-icon.svg" alt="Excluir" />
+                  Excluir
+                </a>
+              </div>
+            </div>
+            <div class="question-wrapper">
+              <div class="question-content">
+                <span class="user">
+                  <img src="./public/assets/user.svg" alt="Avatar" />
+                </span>
+                <span class="question"> O que é Typescript? </span>
+              </div>
+              <div class="actions">
+                <a href="#" class="check">
+                  <img
+                    src="./public/assets/check-icon.svg"
+                    alt="Marcar como lida"
+                  />
+                  Marcar como lida
+                </a>
+                <a href="#" class="delete">
+                  <img src="./public/assets/trash-icon.svg" alt="Excluir" />
+                  Excluir
+                </a>
+              </div>
+            </div>
+            <div class="question-wrapper">
+              <div class="question-content">
+                <span class="user">
+                  <img src="./public/assets/user.svg" alt="Avatar" />
+                </span>
+                <span class="question">
+                  Você ja sabe quais as bases você precisa melhorar para
+                  alcançar o seu próximo nível com maestria? Definiu o seu foco
+                  e objetivo para seguir em frente? Estou curiosa e embasbacada
+                  com sua perseverança por ter alcançado a terceira aula e sei
+                  que vai continuar ate o fim, então responde ai pra gente!!
+                </span>
+              </div>
+              <div class="actions">
+                <a href="#" class="check">
+                  <img
+                    src="./public/assets/check-icon.svg"
+                    alt="Marcar como lida"
+                  />
+                  Marcar como lida
+                </a>
+                <a href="#" class="delete">
+                  <img src="./public/assets/trash-icon.svg" alt="Excluir" />
+                  Excluir
+                </a>
+              </div>
+            </div>
+            <div class="question-wrapper read">
+              <div class="question-content">
+                <span class="user">
+                  <img src="./public/assets/user.svg" alt="Avatar" />
+                </span>
+                <span class="question"> O que é Javascript? </span>
+              </div>
+              <div class="actions">
+                <a href="#" class="delete">
+                  <img src="./public/assets/trash-icon.svg" alt="Excluir" />
                   Excluir
                 </a>
               </div>
@@ -74,5 +152,27 @@
           </div>
         </section>
       </main>
+    </div>
+    <div class="modal-wrapper">
+      <div class="modal">
+        <h2>Excluir pergunta</h2>
+        <p>Tem certeza que você deseja excluir essa pergunta?</p>
+
+        <form action="#">
+          <label class="sr-only" for="password"></label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Digite a senha"
+          />
+          
+          <div class="buttons-container">
+            <span class="btn grey">Cancelar</span>
+            <button class="red">Sim, excluir</button>
+        </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

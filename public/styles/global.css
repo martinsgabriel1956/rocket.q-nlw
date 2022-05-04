@@ -11,6 +11,7 @@
   --grey-blue: #A1B2CD;
   --grey-medium: #D3D9E2;
   --grey-light: #E5EAF1;
+  --grey-lighter: #EAECF2;
   --button-blue: #5699FF;
   --button-red: #EA4B65;
   --button-grey: #8794A7;
@@ -93,6 +94,18 @@ button:hover, .btn:hover {
 button > img, .btn > img {
   margin-right: 1rem;
   width: 2rem;
+}
+
+button.red,
+.btn.red {
+  background: var(--red);
+  color: var(--white);
+}
+
+button.grey,
+.btn.grey {
+  background: var(--grey-light);
+  color: var(--grey-dark);
 }
 
 .content header {
